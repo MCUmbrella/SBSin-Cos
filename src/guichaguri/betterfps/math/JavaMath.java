@@ -2,7 +2,7 @@ package guichaguri.betterfps.math;
 
 public class JavaMath
 {
-	public static float sin(final float a)
+	/*public static float sin(final float a)
 	{
 		if(a==0.0f) {return(0.0f);}
 		if(a<0) {return sin(3.14f-a);}
@@ -20,7 +20,7 @@ public class JavaMath
 			return aa*0.64f-4;
 		}
 		else {System.out.println("[X] SBSIN LOGIC ERROR");return aa;}
-	}
+	}*/
 	public static float cos(float a){
 		if(a==0.0f) {return(1.0f);}
 		if(a<0) {return cos(-a);}
@@ -34,6 +34,11 @@ public class JavaMath
 			return aa*0.64f-3;
 		}
 		else{System.out.println("[X] SBCOS LOGIC ERROR");return aa;}		
+	}
+	public static float sin(float a)
+	{
+		if(a==0.0f) {return(0.0f);}
+		return cos(a-1.57f);
 	}
 	
 	public static void main(String[] args)
